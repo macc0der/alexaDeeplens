@@ -1,0 +1,303 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my tutor",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LettersGameInvoke",
+                    "slots": [],
+                    "samples": [
+                        "alphabets game",
+                        "alphabet",
+                        "letters game",
+                        "letters",
+                        "alphabets"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NumbersGameInvoke",
+                    "slots": [],
+                    "samples": [
+                        "numbers game",
+                        "number game",
+                        "numbers",
+                        "number"
+                    ]
+                },
+                {
+                    "name": "LettersGame",
+                    "slots": [
+                        {
+                            "name": "alphabets",
+                            "type": "letters",
+                            "samples": [
+                                "{alphabets}"
+                            ]
+                        }
+                    ],
+                    "samples": []
+                },
+                {
+                    "name": "NumbersGame",
+                    "slots": [
+                        {
+                            "name": "numbers",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{numbers}"
+                            ]
+                        }
+                    ],
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "letters",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "z."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "y."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "x."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "w."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "v."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "u."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "t."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "s."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "r."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "q."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "p."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "o."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "m."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "l."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "k."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "j."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "i."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "h."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "g."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "f."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "e."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "d."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "c."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "b."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "LettersGameInvoke",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "NumbersGameInvoke",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "LettersGame",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "alphabets",
+                            "type": "letters",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1446342484195.211416822303"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "NumbersGame",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numbers",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.479656913748.1444146431755"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.628315002497.864187185949",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please show the alphabet"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1394976718374.1473358285452",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please show the number"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1446342484195.211416822303",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hold the object closer to the camera"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.479656913748.1444146431755",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hold the object closer to the camera"
+                    }
+                ]
+            }
+        ]
+    }
+}
